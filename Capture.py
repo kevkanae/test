@@ -1,4 +1,4 @@
-import cv2
+import cv2 , os
 import numpy as np
 
 # Load HAAR face classifier
@@ -35,6 +35,7 @@ while True:
         face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
 
         # Save file in specified directory with unique name
+        os.mkdir('C:/Users/kevin/Documents/FaceRecog')
         file_name_path = 'C://Users//kevin//Documents//FaceRecog//' + str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
 
