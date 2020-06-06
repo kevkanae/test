@@ -2,7 +2,7 @@ import cv2 , os
 import numpy as np
 
 # Load HAAR face classifier
-face_classifier = cv2.CascadeClassifier(r'C:\Users\kevin\Documents\test\haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier(r'C:\Users\kevin\Documents\test\HaarCascadeFace.xml')
 
 # Load functions
 def face_extractor(img):
